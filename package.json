@@ -1,7 +1,7 @@
 {
-  "name": "runslack",
+  "name": "posthog-hubspot-sync",
   "version": "1.0.0",
-  "description": "",
+  "description": "Adjusted version of the official Hubspot connector",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

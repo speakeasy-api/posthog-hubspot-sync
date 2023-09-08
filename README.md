@@ -2,8 +2,7 @@
 
 ## Description
 
-Adjusted version of the official ubspot connector. Could be run in a cloudfunction.
-Currently it is not posssible to add a plugin in the cloudversion of posthog.
+Adjusted version of the official Hubspot connector. Could be run in a cloudfunction.
 Eventually call for enterprise if they are able to add it for us. 
 
 based on https://github.com/PostHog/hubspot-plugin
@@ -27,3 +26,6 @@ properties or custom overwrites.
 Todo:
 SetOnce for classic additionaMappings is not implemented yet, could be also solved via overwrites for now 
 Custom overwrites based on function ( like calculated values). If necessary
+
+Note:
+Currently it is not posssible to add a plugin in the cloudversion of posthog.
