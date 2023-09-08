@@ -108,7 +108,6 @@ async function fetchAndProcessPosthogEvents(config) {
     });
 
     if (response.ok) {
-        console.log("Events request ok");
         const events = await response.json();
         
         for (const event of events.results) {
@@ -120,13 +119,11 @@ async function fetchAndProcessPosthogEvents(config) {
                     const email = getEmailFromEvent(event)
                     console.log("Event: ", event.timestamp, event.event, email)
 
-                    if (email==="eric@sidibe.de") {
-                        try {
-                            await onEvent(event, { config });
-                            processedEventIds.add(event.id);
-                        } catch(error) {
-                            console.log("On event failed with", error, "try again later")
-                        }
+                    try {
+                        await onEvent(event, { config });
+                        processedEventIds.add(event.id);
+                    } catch(error) {
+                        console.log("On event failed with", error, "try again later")
                     }
                 }
             }
