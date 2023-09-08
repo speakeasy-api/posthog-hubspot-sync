@@ -1,0 +1,44 @@
+Arguments: 
+  /Users/bulleric/.asdf/installs/nodejs/20.2.0/bin/node /Users/bulleric/.asdf/installs/nodejs/20.2.0/.npm/bin/yarn add axios typescript ts-node
+
+PATH: 
+  /Users/bulleric/.asdf/plugins/nodejs/shims:/Users/bulleric/.asdf/installs/nodejs/20.2.0/.npm/bin:/Users/bulleric/.asdf/installs/nodejs/20.2.0/bin:/Users/bulleric/google-cloud-sdk/bin:/Users/bulleric/.asdf/bin:/Users/bulleric/.asdf/shims:/Users/bulleric/projects/cardano-node:.git/safe/../../bin:/Users/bulleric/.bin:/usr/local/sbin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/bulleric/.fzf/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  20.2.0
+
+Platform: 
+  darwin arm64
+
+Trace: 
+  Error [ERR_SOCKET_CONNECTION_TIMEOUT]: Socket connection timeout
+      at new NodeError (node:internal/errors:399:5)
+      at internalConnectMultiple (node:net:1099:20)
+      at Timeout.internalConnectMultipleTimeout (node:net:1638:3)
+      at listOnTimeout (node:internal/timers:575:11)
+      at process.processTimers (node:internal/timers:514:7)
+
+npm manifest: 
+  {
+    "name": "runslack",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "axios": "^1.4.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
